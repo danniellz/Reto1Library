@@ -1,5 +1,6 @@
 package message;
 
+import java.io.Serializable;
 import user.User;
 
 /**
@@ -7,7 +8,7 @@ import user.User;
  * 
  * @author Daniel Brizuela, Aritz Arrieta, Mikel Matilla, Jonathan Viñan
  */
-public class Message {
+public class Message implements Serializable{
     //Attributes
     private User user;
     private Accion accion;

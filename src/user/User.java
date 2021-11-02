@@ -1,5 +1,6 @@
 package user;
 
+import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
@@ -7,7 +8,7 @@ import java.sql.Timestamp;
  * 
  * @author Daniel Brizuela, Aritz Arrieta, Mikel Matilla, Jonathan Viñan
  */
-public class User {
+public class User implements Serializable{
     //Attributes
     private int id;
     private String login;

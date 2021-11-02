@@ -8,7 +8,7 @@ import user.User;
  * @author Daniel Brizuela, Aritz Arrieta, Mikel Matilla, Jonathan Viñan
  */
 public interface Signable {
-    public void signIn(User user);
+    public User signIn(User user);
     
     public void signUp(User user);   
 }
