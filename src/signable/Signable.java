@@ -2,10 +2,9 @@ package signable;
 
 import exceptions.ConnectionException;
 import exceptions.DatabaseNotFoundException;
-import exceptions.IncorrectPasswordException;
-import exceptions.InvalidEmailFormatException;
+import exceptions.MaxConnectionException;
 import exceptions.UserAlreadyExistException;
-import exceptions.UserNotFoundException;
+import exceptions.UserPasswordException;
 import user.User;
 
 /**
@@ -14,9 +13,9 @@ import user.User;
  * @author Daniel Brizuela, Aritz Arrieta, Mikel Matilla, Jonathan Viñan
  */
 public interface Signable {
-    public User signIn(User user) throws UserAlreadyExistException, UserNotFoundException, DatabaseNotFoundException, 
-                                         ConnectionException, IncorrectPasswordException, InvalidEmailFormatException;
+    public User signIn(User user) throws UserAlreadyExistException, UserPasswordException, DatabaseNotFoundException, 
+                                         ConnectionException, MaxConnectionException;
     
-    public void signUp(User user) throws UserAlreadyExistException, UserNotFoundException, DatabaseNotFoundException, 
-                                         ConnectionException, IncorrectPasswordException, InvalidEmailFormatException;;   
+    public void signUp(User user) throws UserAlreadyExistException, UserPasswordException, DatabaseNotFoundException, 
+                                         ConnectionException, MaxConnectionException;   
 }
