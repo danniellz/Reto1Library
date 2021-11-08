@@ -16,6 +16,6 @@ public interface Signable {
     public User signIn(User user) throws UserAlreadyExistException, UserPasswordException, DatabaseNotFoundException, 
                                          ConnectionException, MaxConnectionException;
     
-    public void signUp(User user) throws UserAlreadyExistException, UserPasswordException, DatabaseNotFoundException, 
+    public User signUp(User user) throws UserAlreadyExistException, UserPasswordException, DatabaseNotFoundException, 
                                          ConnectionException, MaxConnectionException;   
 }
