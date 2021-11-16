@@ -8,13 +8,13 @@ import java.util.logging.Logger;
  *
  * @author Daniel Brizuela, Aritz Arrieta, Mikel Matilla, Jonathan Viñan
  */
-public class UserPasswordException extends Exception {
-    private static final Logger LOG = Logger.getLogger(UserPasswordException.class.getName());
+public class IncorrectPasswordException extends Exception {
+    private static final Logger LOG = Logger.getLogger(IncorrectPasswordException.class.getName());
 
     /**
      * Constructs an instance of <code>UserNotFoundException</code> with the specified detail LOG message.
      */
-    public UserPasswordException() {
-        LOG.log(Level.WARNING, "User doesn't exist or Incorrect Password");
+    public IncorrectPasswordException() {
+        LOG.log(Level.WARNING, "Incorrect Password");
     }
 }
